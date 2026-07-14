@@ -3,96 +3,255 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lalas - Opciones de sitio</title>
+  <title>Lalas - Protección para cada momento</title>
+  <meta name="description" content="Lalas Suaves: toallas femeninas con alas, sobres individuales y variantes para uso diario, días intensos y protección nocturna.">
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" type="image/png" href="assets/favicon-32.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="stylesheet" href="styles.css">
-  <style>
-    body { background: var(--fondo); }
-    .chooser {
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      padding: 32px 20px;
-    }
-    .chooser-inner {
-      max-width: 960px;
-      width: 100%;
-      background: white;
-      border: 1px solid var(--linea);
-      border-radius: 12px;
-      box-shadow: var(--sombra);
-      padding: 34px;
-    }
-    .chooser-logo {
-      width: 150px;
-      height: 58px;
-      object-fit: contain;
-      object-position: left center;
-      margin-bottom: 28px;
-    }
-    .chooser h1 {
-      color: var(--azul);
-      font-size: clamp(38px, 6vw, 68px);
-      line-height: .95;
-      margin-bottom: 16px;
-      letter-spacing: 0;
-    }
-    .chooser p {
-      max-width: 720px;
-      color: var(--gris);
-      font-size: 17px;
-      line-height: 1.5;
-      margin-bottom: 28px;
-    }
-    .choice-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px;
-    }
-    .choice {
-      border: 1px solid var(--linea);
-      border-radius: 8px;
-      padding: 22px;
-      background: var(--blanco);
-    }
-    .choice strong {
-      display: block;
-      color: var(--azul);
-      font-size: 22px;
-      margin-bottom: 8px;
-    }
-    .choice span {
-      display: block;
-      color: var(--gris);
-      line-height: 1.45;
-      margin-bottom: 18px;
-    }
-    @media (max-width: 720px) {
-      .choice-grid { grid-template-columns: 1fr; }
-    }
-  </style>
 </head>
 <body>
-  <main class="chooser">
-    <section class="chooser-inner">
-      <img class="chooser-logo" src="assets/lalas-logo-positive.png" alt="Lalas">
-      <h1>Opciones de sitio para Lalas</h1>
-      <p>Dos propuestas one-page para presentar la marca, su posicionamiento y la línea de productos con un lenguaje claro, comercial y alineado a la identidad visual.</p>
-      <div class="choice-grid">
-        <article class="choice">
-          <strong>Opción A: Institucional</strong>
-          <span>Foco en respaldo, posicionamiento, oportunidad comercial y contacto mayorista.</span>
-          <a class="button dark" href="opcion-a-institucional.html">Abrir opción A</a>
-        </article>
-        <article class="choice">
-          <strong>Opción B: Producto</strong>
-          <span>Foco en packs, arquitectura de línea, beneficios por variante y lectura retail.</span>
-          <a class="button dark" href="opcion-b-producto.html">Abrir opción B</a>
-        </article>
+  <header class="site-header light">
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#inicio" aria-label="Lalas inicio">
+        <img class="logo" src="assets/lalas-logo-final.png" alt="Lalas">
+      </a>
+      <input class="nav-toggle" type="checkbox" id="nav-toggle-b" aria-label="Abrir menú">
+      <label class="nav-menu-button" for="nav-toggle-b" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <div class="nav-links">
+        <a href="#linea">Productos</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#momentos">Momentos</a>
+        <a class="nav-cta" href="https://www.mercadolibre.com.ar" target="_blank" rel="noopener">Comprar</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero producto product-hero">
+      <div class="hero-inner product-hero-inner">
+        <div>
+          <div class="eyebrow">Lalas Suaves</div>
+          <h1 class="hero-title">Protección para moverte tranquila.</h1>
+          <p class="hero-copy">Toallas femeninas con alas, sobres individuales y variantes pensadas para cada momento: uso diario, días intensos, día y noche, y descanso nocturno.</p>
+          <div class="button-row">
+            <a class="button dark" href="#linea">Ver productos</a>
+            <a class="button secondary" href="https://www.mercadolibre.com.ar" target="_blank" rel="noopener">Comprar en Mercado Libre</a>
+          </div>
+        </div>
+
+        <div class="hero-showcase" aria-label="Productos Lalas">
+          <div class="hero-pack-card hero-pack-card-main">
+            <img src="assets/productos/active-pack.png" alt="Pack Lalas Active Protect">
+            <span>Active Protect</span>
+          </div>
+          <div class="hero-pack-stack">
+            <img src="assets/productos/balance-pack.png" alt="Pack Lalas Balance Protect">
+            <img src="assets/productos/intense-pack.png" alt="Pack Lalas Intense Protect Máx">
+            <img src="assets/productos/nocturna-pack.png" alt="Pack Lalas Nocturna Protect">
+          </div>
+          <div class="claim-card dark hero-claim">
+            <strong>Elegí según tu día.</strong>
+            <span>Suavidad, absorción, ajuste y protección en una línea clara para comprar sin vueltas.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="benefit-icons">
+          <article class="benefit-icon-card">
+            <img src="assets/iconos/alas.png" alt="">
+            <strong>Con alas</strong>
+            <p>Ayudan a mantener la toalla en su lugar y refuerzan la sensación de seguridad.</p>
+          </article>
+          <article class="benefit-icon-card">
+            <img src="assets/iconos/sobre-individual.png" alt="">
+            <strong>Sobre individual</strong>
+            <p>Prácticas para llevar, guardar y usar dentro o fuera de casa.</p>
+          </article>
+          <article class="benefit-icon-card">
+            <img src="assets/iconos/nucleo-absorcion-instant-dry.png" alt="">
+            <strong>Instant Dry</strong>
+            <p>Absorbe y retiene más rápido para acompañar días de mayor movimiento.</p>
+          </article>
+          <article class="benefit-icon-card">
+            <img src="assets/iconos/sistema-total-protect.png" alt="">
+            <strong>Total Protect</strong>
+            <p>Protección funcional para elegir con confianza en el momento de compra.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="linea" class="section surface">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Una variante para cada necesidad.</h2>
+          <p class="section-intro">La línea organiza la elección por momento de uso, flujo y nivel de protección para que encontrar el producto correcto sea simple.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card balance">
+            <img class="variant-banner" src="assets/iconos/banner-balance.png" alt="">
+            <div class="product-visual"><img src="assets/productos/balance-product.png" alt="Lalas Balance Protect"></div>
+            <div class="product-copy">
+              <h3>Balance Protect</h3>
+              <span>Diurna / 23 cm / flujo moderado</span>
+              <p>Protección cómoda para el uso diario, con cubierta extra suave, rápida absorción y tecnología 3D.</p>
+              <div class="benefit-list"><span class="benefit">Uso diario</span><span class="benefit">Confort</span><span class="benefit">23 cm</span></div>
+            </div>
+          </article>
+
+          <article class="product-card active">
+            <img class="variant-banner" src="assets/iconos/banner-active.png" alt="">
+            <div class="product-visual"><img src="assets/productos/active-product.png" alt="Lalas Active Protect"></div>
+            <div class="product-copy">
+              <h3>Active Protect</h3>
+              <span>Diurna / 23 cm / flujo abundante</span>
+              <p>Protección confiable para días intensos, con Extra Gel, Instant Dry y ajuste que acompaña tus movimientos.</p>
+              <div class="benefit-list"><span class="benefit">Flujo abundante</span><span class="benefit">Extra Gel</span><span class="benefit">Ajuste Adapt+</span></div>
+            </div>
+          </article>
+
+          <article class="product-card intense">
+            <img class="variant-banner" src="assets/iconos/banner-intense.png" alt="">
+            <div class="product-visual"><img src="assets/productos/intense-product.png" alt="Lalas Intense Protect Máx"></div>
+            <div class="product-copy">
+              <h3>Intense Protect Máx</h3>
+              <span>Día y noche / 28 cm / flujo abundante</span>
+              <p>Protección completa para días intensos y noches normales, con zonas de absorción, ajuste activo y mayor cobertura atrás.</p>
+              <div class="benefit-list"><span class="benefit">28 cm</span><span class="benefit">Día y noche</span><span class="benefit">Más ancha atrás</span></div>
+            </div>
+          </article>
+
+          <article class="product-card nocturna">
+            <img class="variant-banner" src="assets/iconos/banner-nocturna.png" alt="">
+            <div class="product-visual"><img src="assets/productos/nocturna-product.png" alt="Lalas Nocturna Protect"></div>
+            <div class="product-copy">
+              <h3>Nocturna Protect</h3>
+              <span>Nocturna / 28 cm / flujo abundante</span>
+              <p>Máxima protección nocturna para descansar con tranquilidad, con Sistema Total Protect, Instant Dry y Flex Ajuste Activo.</p>
+              <div class="benefit-list"><span class="benefit">Descanso</span><span class="benefit">Total Protect</span><span class="benefit">28 cm</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="beneficios" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Protección que se entiende rápido.</h2>
+          <p class="section-intro">Cada beneficio está pensado para resolver una necesidad concreta: absorción, ajuste, suavidad y cobertura para que elegir sea simple.</p>
+        </div>
+        <div class="feature-band">
+          <article>
+            <img src="assets/iconos/flex-ajuste-activo.png" alt="">
+            <div>
+              <strong>Flex ajuste activo</strong>
+              <p>Se adapta al cuerpo y acompaña el movimiento cotidiano.</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/iconos/barreras-anti-fugas.png" alt="">
+            <div>
+              <strong>Barreras anti fugas</strong>
+              <p>Mayor sensación de seguridad para seguir el día con tranquilidad.</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/iconos/3d-rombo-style.png" alt="">
+            <div>
+              <strong>Tecnología 3D</strong>
+              <p>Textura diseñada para confort y distribución del flujo.</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/iconos/medida-28-cm.png" alt="">
+            <div>
+              <strong>Mayor cobertura</strong>
+              <p>Formato 28 cm para protección día y noche o descanso nocturno.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="momentos" class="section mint">
+      <div class="container">
+        <div class="moment-layout">
+          <div class="mint-panel">
+            <h2>Para rutinas reales.</h2>
+            <p>Lalas acompaña mujeres que estudian, trabajan, se mueven, descansan y necesitan resolver la compra con confianza. La identificación se construye desde situaciones cotidianas: libertad para seguir el día, protección cuando el flujo aumenta y tranquilidad durante la noche.</p>
+          </div>
+          <div class="moment-cards">
+            <article><strong>Durante el día</strong><span>Balance y Active para uso diario o flujo abundante.</span></article>
+            <article><strong>En movimiento</strong><span>Alas, ajuste y sobres individuales para llevar a todos lados.</span></article>
+            <article><strong>Día y noche</strong><span>Intense Protect Máx para mayor cobertura y tranquilidad.</span></article>
+            <article><strong>Al descansar</strong><span>Nocturna Protect para máxima protección durante el sueño.</span></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section surface">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Conocé cada variante en detalle.</h2>
+          <p class="section-intro">Active, Balance e Intense muestran sus principales atributos para comparar usos, medidas y niveles de protección con mayor claridad.</p>
+        </div>
+        <div class="boards-grid">
+          <button class="board-link" type="button" data-modal-image="assets/iconos/placa-active-protect.png" data-modal-alt="Beneficios de Lalas Active Protect" aria-label="Ver beneficios de Lalas Active Protect">
+            <img src="assets/iconos/placa-active-protect.png" alt="Beneficios de Lalas Active Protect">
+          </button>
+          <button class="board-link" type="button" data-modal-image="assets/iconos/placa-balance-protect.png" data-modal-alt="Beneficios de Lalas Balance Protect" aria-label="Ver beneficios de Lalas Balance Protect">
+            <img src="assets/iconos/placa-balance-protect.png" alt="Beneficios de Lalas Balance Protect">
+          </button>
+          <button class="board-link" type="button" data-modal-image="assets/iconos/placa-intense-protect-max.png" data-modal-alt="Beneficios de Lalas Intense Protect Máx" aria-label="Ver beneficios de Lalas Intense Protect Máx">
+            <img src="assets/iconos/placa-intense-protect-max.png" alt="Beneficios de Lalas Intense Protect Máx">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="comprar" class="section blue">
+      <div class="container closing">
+        <div>
+          <h2>Elegí Lalas en Mercado Libre.</h2>
+          <p>Una línea de toallas femeninas con alas, sobres individuales y variantes para cada momento del ciclo.</p>
+        </div>
+        <a class="button" href="https://www.mercadolibre.com.ar" target="_blank" rel="noopener">Comprar ahora</a>
       </div>
     </section>
   </main>
+
+  <dialog class="image-modal" id="image-modal" aria-label="Vista ampliada">
+    <button class="modal-close" type="button" aria-label="Cerrar imagen">×</button>
+    <img id="modal-image" src="" alt="">
+  </dialog>
+
+  <script>
+    const imageModal = document.getElementById("image-modal");
+    const modalImage = document.getElementById("modal-image");
+    const modalClose = imageModal.querySelector(".modal-close");
+
+    document.querySelectorAll("[data-modal-image]").forEach((button) => {
+      button.addEventListener("click", () => {
+        modalImage.src = button.dataset.modalImage;
+        modalImage.alt = button.dataset.modalAlt || "";
+        imageModal.showModal();
+      });
+    });
+
+    modalClose.addEventListener("click", () => imageModal.close());
+    imageModal.addEventListener("click", (event) => {
+      if (event.target === imageModal) imageModal.close();
+    });
+  </script>
 </body>
 </html>
