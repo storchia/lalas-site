@@ -21,11 +21,11 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 25px;
+  scroll-padding-top: 75px;
 }
 
 [id] {
-  scroll-margin-top: 25px;
+  scroll-margin-top: 75px;
 }
 
 body {
@@ -821,7 +821,7 @@ p {
   line-height: 1.05;
 }
 
-.product-copy>span {
+.product-copy > span {
   color: var(--gris);
   font-size: 12px;
   font-weight: 900;
@@ -1212,11 +1212,11 @@ p {
 
 @media (max-width: 760px) {
   html {
-    scroll-padding-top: 135px;
+    scroll-padding-top: 80px;
   }
 
   [id] {
-    scroll-margin-top: 135px;
+    scroll-margin-top: 80px;
   }
 
   .nav {
@@ -1244,7 +1244,7 @@ p {
     pointer-events: none;
   }
 
-  .nav-toggle:focus-visible+.nav-menu-button {
+  .nav-toggle:focus-visible + .nav-menu-button {
     outline: 3px solid var(--rosa);
     outline-offset: 3px;
   }
@@ -1272,7 +1272,7 @@ p {
     border-top-color: var(--linea);
   }
 
-  .nav-toggle:checked~.nav-links {
+  .nav-toggle:checked ~ .nav-links {
     max-height: 280px;
     padding: 10px 0 6px;
     opacity: 1;
