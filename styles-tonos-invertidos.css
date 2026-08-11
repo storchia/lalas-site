@@ -1,8 +1,8 @@
 :root {
   --azul: #1e3f7e;
   --azul-profundo: #142c5f;
-  --verde: #9ed7c9;
-  --rosa: #f5a9cb;
+  --verde: #f5a9cb;
+  --rosa: #9ed7c9;
   --blanco: #ffffff;
   --negro: #000000;
   --tinta: #13213b;
@@ -671,7 +671,7 @@ p {
 .product-hero {
   background:
     radial-gradient(circle at 74% 15%, rgba(255, 255, 255, 0.72), transparent 32%),
-    linear-gradient(90deg, #ffffff 0 50%, #f8c0d8 50% 100%);
+    linear-gradient(90deg, #ffffff 0 50%, #9ed7c9 50% 100%);
 }
 
 .product-hero-inner {
@@ -1312,7 +1312,7 @@ p {
   }
 
   .product-hero {
-    background: linear-gradient(180deg, #ffffff 0 42%, #f8c0d8 42% 100%);
+    background: linear-gradient(180deg, #ffffff 0 42%, #9ed7c9 42% 100%);
   }
 
   .hero-showcase {
