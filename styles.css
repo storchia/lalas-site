@@ -75,8 +75,8 @@ a {
 }
 
 .logo {
-  width: 178px;
-  height: 72px;
+  width: 190px;
+  height: 76px;
   object-fit: contain;
   object-position: left center;
 }
@@ -597,15 +597,16 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 9px;
-  margin-top: 10px;
+  gap: 10px;
+  margin-top: auto;
   padding-top: 4px;
 }
 
 .official-icons img {
-  width: 54px;
-  height: 54px;
-  flex: 0 0 54px;
+  width: 66px;
+  height: 66px;
+  flex: 0 0 66px;
+  display: block;
   object-fit: contain;
   border-radius: 50%;
 }
@@ -1096,31 +1097,31 @@ p {
 }
 
 .board-link {
-  aspect-ratio: 1.48 / 1;
+  aspect-ratio: 1 / 1;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 14px;
-  border: 1px solid var(--linea);
-  border-radius: var(--radio);
-  background: var(--blanco);
-  box-shadow: 0 14px 32px rgba(19, 33, 59, 0.1);
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
   cursor: zoom-in;
   outline-offset: 4px;
-  transition: transform 160ms ease, box-shadow 160ms ease;
+  transition: transform 160ms ease, filter 160ms ease;
 }
 
 .board-link:hover,
 .board-link:focus-visible {
   transform: translateY(-3px);
-  box-shadow: 0 18px 42px rgba(19, 33, 59, 0.18);
+  filter: drop-shadow(0 18px 24px rgba(19, 33, 59, 0.14));
 }
 
 .boards-grid img {
   width: 100%;
   height: 100%;
-  border-radius: calc(var(--radio) - 2px);
+  border-radius: 0;
   object-fit: contain;
 }
 
@@ -1175,13 +1176,28 @@ p {
 }
 
 .footer-brand {
-  display: grid;
-  gap: 10px;
+  min-width: 0;
 }
 
-.footer-brand img {
-  width: 164px;
+.footer-brand-logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+}
+
+.footer-logo-lalas {
+  width: 154px;
   height: auto;
+  flex: 0 0 auto;
+}
+
+.footer-logo-zanhang {
+  width: 154px;
+  max-height: 64px;
+  height: auto;
+  object-fit: contain;
 }
 
 .footer-brand strong {
@@ -1192,6 +1208,7 @@ p {
 .footer-info {
   display: grid;
   gap: 8px;
+  justify-items: start;
   color: var(--gris);
   line-height: 1.45;
 }
@@ -1220,9 +1237,9 @@ p {
 }
 
 .footer-social a {
-  width: 42px;
-  height: 42px;
-  min-height: 42px;
+  width: 52px;
+  height: 52px;
+  min-height: 52px;
   padding: 0;
   border: 1px solid var(--linea);
   border-radius: 999px;
@@ -1239,8 +1256,8 @@ p {
 }
 
 .footer-social svg {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   display: block;
 }
 
@@ -1339,8 +1356,8 @@ p {
   }
 
   .logo {
-    width: 144px;
-    height: 58px;
+    width: 154px;
+    height: 62px;
   }
 
   .nav-menu-button {
@@ -1439,6 +1456,15 @@ p {
 
   .product-card {
     min-height: auto;
+  }
+
+  .footer-logo-lalas {
+    width: 142px;
+  }
+
+  .footer-logo-zanhang {
+    width: 142px;
+    max-height: 60px;
   }
 
   .lifestyle-feature,
