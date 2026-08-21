@@ -1187,15 +1187,9 @@ p {
   width: fit-content;
 }
 
-.footer-logo-lalas {
-  width: 154px;
-  height: auto;
-  flex: 0 0 auto;
-}
-
 .footer-logo-zanhang {
-  width: 154px;
-  max-height: 64px;
+  width: 210px;
+  max-height: 92px;
   height: auto;
   object-fit: contain;
 }
@@ -1458,13 +1452,9 @@ p {
     min-height: auto;
   }
 
-  .footer-logo-lalas {
-    width: 142px;
-  }
-
   .footer-logo-zanhang {
-    width: 142px;
-    max-height: 60px;
+    width: 180px;
+    max-height: 82px;
   }
 
   .lifestyle-feature,
